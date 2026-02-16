@@ -28,9 +28,7 @@ import os
 
 
 def compute_bases_coeff_regularization(model, reg_type, lambda_reg=1e-4):
-    """
-    计算 bases_coeff 的正则化损失
-    """
+
     reg_loss = 0.0
     count = 0
     for name, param in model.named_parameters():
